@@ -6,7 +6,6 @@ import java.util.List;
 public class Manager
 {
     private int passWord;
-    public Book[] Books;
     public User[] Users;
 
     Manager(int pass)
@@ -15,12 +14,8 @@ public class Manager
     }
 
 
-    public void addBook(Book book)
-    {
-        List<Book> list = new ArrayList<Book>(Arrays.asList(Books));
-        list.add(book);
-        Books = list.toArray(Books);
-    }
+
+
 
     public void addUser(User user)
     {
@@ -29,11 +24,6 @@ public class Manager
         Users = list.toArray(Users);
     }
 
-    public void removeBook(Book book)
-    {
-        List<Book> list = new ArrayList<Book>(Arrays.asList(Books));
-        list.remove(book);
-        Books = list.toArray(Books);
-    }
+
 
 }
